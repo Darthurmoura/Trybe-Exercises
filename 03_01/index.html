@@ -6,8 +6,9 @@
 <html>
     <style>
         .container {
-            display: flex;
-            flex-direction: row;
+            margin: auto;
+            width: 60%
+            
         }
         .fullCard {
             width: auto;
@@ -16,53 +17,69 @@
             margin: 10px 5px;
             padding: 4px;
             background-color: whitesmoke;
+            font-family: Poppins, sans-serif;
             
             
         }
         .cardContent {
             padding: 10px;
         }
-        .cardText {
-            margin-bottom: 30px;
-            text-align: left;
-            line-height: 20px;
-            font-family: Poppins, sans-serif;
 
+        .cardTop {
+            margin-bottom: 30px;
+            /* text-align: left;
+            line-height: 20px; */
+            display: flex;
+            flex-direction: row;
+        }
+
+        .cardHeader {
+            display: flex;
+            flex-direction: column;
         }
 
         .cardShadow {
             box-shadow: 0 10px 20px rgba(0,0,0,0.2);
         }
 
-        .pictureStyle {
-            margin: 0 auto 0 auto;
-            display: flex;
-            width: 150px;
-            border-radius: 15%;
-        }
-
         .cardTitle {
             font-weight: 500;
-            text-align: center;
-                        
+            text-align: left;           
+            margin-top: 5px;
+            
         }
 
-        .cardSub {            
+        div.cardTitle h1 {
+            font-size: 2em;
+            margin-top: -8px;
+        }
+
+        .cardSub {
+            margin-top: -38px; 
             font-weight: 300;
-            font-size: 10px;
-            line-height: 13px;
-            text-align: center;
+            font-size: 15px;
+            line-height: 16px;
+            
         }
 
         p {
-            font-size: 18px;
+            font-size: 13px;
             font-weight: 500;
-            text-align: center;
+            text-align: left;
+            line-height: 2em;
+            margin-top: -20px;
+            width: 80%;
 
         }
 
         .socialmediaIcons {
             width: 30px;
+        }
+
+        div img {
+            width: 150px;
+            border-radius: 15%;
+            margin: 10px 20px;
         }
 
         
@@ -76,22 +93,30 @@
         <div class="container">
         <div class="fullCard cardShadow">
             <div class="cardContent">
-                <div class="cardText">
-                    <h1 class="cardTitle">
-                        Daniel Moura
-                    </h1>
-                    <h6 class="cardSub">
-                        País: <strike>PERNAMBUCO</strike> <strong>Brasil</strong><br>
-                        Cidade/Estado: <strong>Recife/PE</strong><br>
-                    </h6>   
-                    <img src="Images/3x4 Pipa.jpg" alt="Foto de Daniel Moura" class="pictureStyle">
-                    
-                    <ul>
-                        <li>Formado em <u>Publicidade</u> pela <strong>Universidade Federal de Pernambuco</strong></li>
-                        <li>Atualmente estudando desenvolvimento web pela <strong>Trybe</strong></li>
-                        
-                    </ul>
+                <section class="cardTop">
+                    <div>
+                        <img src="Images/3x4 Pipa.jpg" alt="Foto de Daniel Moura">
+                    </div>
+                    <div>
+                        <section class="cardHeader">
+                            <div  class="cardTitle">
+                                <h1>
+                                    Daniel Moura
+                                </h1>
+                                <h6 class="cardSub">
+                                    PAÍS: <strike>Pernambuco</strike> <strong>Brasil</strong><br>
+                                    CIDADE/ESTADO: <strong>Recife/PE</strong><br>
+                                </h6>
+                            </div>
+                            <div>   
+                                <p>
+                                    Formado em <u>Publicidade e Propaganda</u> pela <strong>Universidade Federal de Pernambuco</strong>. Em 2019, decidi me reinventar e buscar uma carreira numa área que oferecesse melhores oportunidades de realização profissional. Foi então que conheci a <strong>Trybe</strong> através de indicação de pessoas conhecidas e resolvi participar da seleção.
+                                </p>
+                            </div>
+                        </section>
+                </section>   
                     <hr>
+
                     <h4>
                         <strong>Habilidades:</strong>
                     </h4>
