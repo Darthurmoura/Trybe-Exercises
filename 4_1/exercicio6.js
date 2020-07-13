@@ -1,4 +1,4 @@
-let peca = "TorRe".toLowerCase();
+let peca = "ursO".toLowerCase();
 
 switch (peca) {
     case "peao":
@@ -19,4 +19,6 @@ switch (peca) {
     case "torre":
         console.log("A Torre se move por todo o tabuleiro em linhas retas.");
         break;
+    default:
+        console.log("Erro: Essa peça não existe no Xadrez!")
 }
