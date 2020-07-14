@@ -36,3 +36,18 @@ for(let i = 0; i < numbers.length; i += 1) {
 	}
 }
 console.log("O maior número no array é", maiorNumero);
+
+// Exercício 6
+let isOdd = 0;
+
+for(let i = 0; i < numbers.length; i += 1) {
+	if(numbers[i] % 2 != 0) {
+		isOdd += 1
+	}
+}
+
+if(isOdd === 0){
+	console.log("Nenhum valor ímpar encontrado.")
+} else {
+	console.log("Existem", isOdd, "números ímpares no array.")
+}
