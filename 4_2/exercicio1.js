@@ -51,3 +51,13 @@ if(isOdd === 0){
 } else {
 	console.log("Existem", isOdd, "números ímpares no array.")
 }
+
+// Exercício 7
+let menorNumero = numbers[0];
+
+for(let i = 0; i < numbers.length; i += 1) {
+	if(numbers[i] < menorNumero) {
+		menorNumero = numbers[i];
+	}
+}
+console.log("O menor número no array é", menorNumero);
