@@ -27,3 +27,12 @@ if(mediaArit > 20) {
 	console.log("A média aritmética é menor ou igual a 20.");
 }
 
+// Exercício 5
+let maiorNumero = 0;
+
+for(let i = 0; i < numbers.length; i += 1) {
+	if(numbers[i] > maiorNumero) {
+		maiorNumero = numbers[i];
+	}
+}
+console.log("O maior número no array é", maiorNumero);
