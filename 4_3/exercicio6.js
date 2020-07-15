@@ -1,4 +1,4 @@
-let numero = 37;
+let numero = 7;
 let ehPrimo = false;
 let divisores = 0;
 
