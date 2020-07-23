@@ -93,6 +93,16 @@
       leftImg.className = "small-image";
       leftDiv.appendChild(leftImg);
 
+      // 8:
+      let numsList = ["Um", "Dois", "Três", "Quatro", "Cinco", "Seis", "Sete", "Oito", "Nove", "Dez"];
+      let uList = document.createElement("ul");
+      for (let i of numsList) {
+        let item = document.createElement("li");
+        item.innerText = i;
+        uList.appendChild(item);
+      }
+      rightDiv.appendChild(uList);
+
     </script>
   </body>
 </html>
