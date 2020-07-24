@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Calculator</title>
+</head>
+<body>
+
+  <label>Square this number:
+    <input type="number" id="square-input" size="2">
+  </label>
+  <button id="square-button">Calculate</button>
+  <br><br>
+
+  <label>Half this number:
+    <input type="number" id="half-input" size="2">
+  </label>
+  <button id="half-button">Calculate</button>
+  <br><br>
+
+  <label>
+    Fraction:
+    <input type="number" id="percent1-input" size="2">
+  </label>
+  <label>
+    Whole:
+    <input type="number" id="percent2-input" size="2">
+  </label>
+  <button id="percent-button">Calculate</button>
+  <br><br>
+
+  <label>Calculate area of circle with radius:
+    <input type="number" id="area-input" size="2">
+  </label>
+  <button id="area-button">Calculate</button>
+  <br><br>
+  <div id="solution"></div>
+
+  <script>
+    let solutions = document.getElementById("solution");
+    let squareNumber = document.getElementById("square-input");
+		let squareNumberBtn = document.getElementById("square-button");
+    let halfNumber = document.getElementById("half-input");
+		let halfNumberBtn = document.getElementById("half-button");
+		let percentInput1 = document.getElementById("percent1-input");
+		let percentInput2 = document.getElementById("percent2-input");
+		let percentOf = document.getElementById("percent-button");
+		let areaOfCircle = document.getElementById("area-input");
+		let areaOfCircleBtn = document.getElementById("area-button");
+
+// Square this number:
+    squareNumber.addEventListener("keyup", function(){
+     solution.innerText = `Squared: ${squareNumber.value ** 2}`;
+    })
+    squareNumber.addEventListener("click", function(){
+     solution.innerText = `Squared: ${squareNumber.value ** 2}`;
+    })
+		squareNumberBtn.addEventListener("click", function(){
+     solution.innerText = `Squared: ${squareNumber.value ** 2}`;
+    })
+
+// Halve this number:
+    halfNumber.addEventListener("keyup", function(){
+     solution.innerText = `Halved: ${halfNumber.value / 2}`;
+    })
+    halfNumber.addEventListener("click", function(){
+     solution.innerText = `Halved: ${halfNumber.value / 2}`;
+    })
+		halfNumberBtn.addEventListener("click", function(){
+     solution.innerText = `Halved: ${halfNumber.value / 2}`;
+    })
+
+// Percentage of:
+		percentOf.addEventListener("click", function(){
+			let percent = (percentInput1.value/percentInput2.value) * 100;
+			solution.innerText = `${percentInput1.value} is ${percent}% of ${percentInput2.value}`
+		})
+
+// Area of circle:
+		areaOfCircle.addEventListener("keyup", function(){
+			let area = Math.PI * (areaOfCircle.value ** 2);
+			solution.innerText = `The area of circle with radius ${areaOfCircle.value} is ${area}`
+		})
+		areaOfCircle.addEventListener("click", function(){
+			let area = Math.PI * (areaOfCircle.value ** 2);
+			solution.innerText = `The area of circle with radius ${areaOfCircle.value} is ${area}`
+		})
+		areaOfCircleBtn.addEventListener("click", function(){
+			let area = Math.PI * (areaOfCircle.value ** 2);
+			solution.innerText = `The area of circle with radius ${areaOfCircle.value} is ${area}`
+		})
+
+  </script>
+</body>
+</html>
