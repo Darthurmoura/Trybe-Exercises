@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="contador">Contador</button>
+  <div id="mostrador">0</div>
+
+  <script>
+    const btnCounter = document.getElementById("contador");
+    let counter = document.getElementById("mostrador");
+    btnCounter.addEventListener("click", _ => counter.innerText = parseInt(counter.innerText) + 1);
+  </script>
+</body>
+</html>
