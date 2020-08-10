@@ -9,4 +9,4 @@ const longestWord = phrase => {
   return longest;
 }
 
-console.log(longestWord(`Crie uma função que receba uma frase e retorne qual a maior palavra`));
+console.log(longestWord(`Crie uma função que receba uma frase e retorne qual a maior palavra. Rebekitchas é a maior palavra aqui.`));
