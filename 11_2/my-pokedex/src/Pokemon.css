@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   width: 60%;
 }
 
@@ -15,4 +16,10 @@
   margin: 10px;
   padding: 5px;
   width: 40%;
+}
+
+
+.poke-card:hover {
+  background-color: gainsboro;
+  transform: scale(1.2,1.2);
 }

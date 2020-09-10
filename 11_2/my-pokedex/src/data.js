@@ -97,6 +97,17 @@ const pokemons = [
       },
       image: "https:\/\/cdn.bulbagarden.net/upload/2/2c/Spr_5b_148.png",
       moreInfo: "https:\/\/bulbapedia.bulbagarden.net/wiki/Dragonair_(Pok%C3%A9mon)"
+  },
+  {
+      id: 282,
+      name: "Gardevoir",
+      type: 'Psychic/Fairy',
+      averageWeight: {
+          value: 48.4,
+          measurementUnit: "kg"
+      },
+      image: "https:\/\/cdn.bulbagarden.net/upload/2/20/Spr_5b_282.png",
+      moreInfo: "https:\/\/bulbapedia.bulbagarden.net/wiki/Gardevoir_(Pok%C3%A9mon)"
   }
 ];
 
