@@ -6,7 +6,7 @@ import './Pokemon.css'
 class Pokedex extends React.Component {
   render() {
     return(
-      <div>
+      <div className='pokedex'>
         <h1>PokéDex!</h1>
         <div className='poke-container'>
           {pokemons.map((poke) => {

@@ -1,9 +1,15 @@
+.pokedex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .poke-container{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 60%;
+  width: 100%;
 }
 
 .poke-card {
@@ -12,7 +18,7 @@
   box-shadow: 5px 5px 10px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 10px;
   padding: 5px;
   width: 40%;
@@ -22,4 +28,16 @@
 .poke-card:hover {
   background-color: gainsboro;
   transform: scale(1.2,1.2);
+}
+
+.poke-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 660px) {
+  .poke-card {
+    width: 100%;
+  }
 }
