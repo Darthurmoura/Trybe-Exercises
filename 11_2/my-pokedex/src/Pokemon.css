@@ -1,43 +1,94 @@
 .pokedex {
+  align-items: center;
+  background-color: rgb(204, 0, 0);
+  border: 2px solid black;
+  border-radius: 3px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-items: center;
+  padding: 5px;
+  width: 80%;
+}
+
+.blue-circle {
+  background-image: radial-gradient(rgb(123, 235, 255), rgb(15, 155, 184));
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 40px;
+  left: 35px;
+  position: absolute;
+  top: 35px;
+  width: 40px;
 }
 
 .poke-container{
+  background-color: rgb(255, 0, 0);
+  border: 1px solid black;
+  border-radius: 5px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
+  padding: 10px 0;
+  width: 90%;
 }
 
 .poke-card {
+  background-color: gainsboro;
   border: 1px solid black;
   border-radius: 5px;
   box-shadow: 5px 5px 10px;
   display: flex;
   flex-direction: row;
+  height: 150px;
   justify-content: space-evenly;
   margin: 10px;
   padding: 5px;
-  width: 40%;
+  width: 35%;
 }
 
 
 .poke-card:hover {
-  background-color: gainsboro;
+  background-color: rgb(201, 203, 203);
+  box-shadow: 8px 8px 20px;
   transform: scale(1.2,1.2);
+}
+
+.poke-pic {
+  height: 100%;
 }
 
 .poke-info {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
-@media only screen and (max-width: 660px) {
+.buttons {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+}
+
+.next-btn {
+  background-color: indigo;
+  color: burlywood ;
+}
+
+.type-btn {
+  background-color: indigo;
+  color: burlywood ;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 680px) {
+  .pokedex {
+    min-width: 400px;
+  }
+
   .poke-card {
-    width: 100%;
+    width: 77%;
   }
 }

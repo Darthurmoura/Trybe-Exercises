@@ -1,13 +1,28 @@
 import React from 'react'
 import Pokemon from './Pokemon.js'
-import pokemons from './data.js'
 import './Pokemon.css'
 
 class Pokedex extends React.Component {
+  constructor(props) {
+    super();
+
+    this.handleClick = this.handleClick.bind(this);
+
+  }
+
+  handleClick() {
+    console.log(this.props.pokemons);
+  }
+
   render() {
+    const pokemons = this.props.pokemons;
+
     return(
       <div className='pokedex'>
-        <h1>PokéDex!</h1>
+        <div className='pokedex-header'>
+          <div className='blue-circle'></div>
+          <h1>Pokédex</h1>
+        </div>
         <div className='poke-container'>
           {pokemons.map((poke) => {
             return <Pokemon
@@ -21,6 +36,11 @@ class Pokedex extends React.Component {
             />
           })};
         </div>
+        <section className="buttons">
+          <button id="next-btn" className="next-btn" onClick={this.handleClick}>Next Pokémon</button>
+          <button id="fire-btn" className="type-btn">Fire Pokémons</button>
+          <button id="psychic-btn" className="type-btn">Psychic Pokémons</button>
+        </section>
       </div>
     );
   }
